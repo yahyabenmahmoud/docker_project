@@ -5,7 +5,7 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 
 # Configuration by environment variables, with default values
-APP_MESSAGE = os.environ.get("APP_MESSAGE", "Hello from subnet-app")
+APP_MESSAGE = os.environ.get("APP_MESSAGE", "Hello from subnet-app v1.0.1")
 MAX_ADDRESSES = int(os.environ.get("MAX_ADDRESSES", "1024"))
 
 @app.route("/")
